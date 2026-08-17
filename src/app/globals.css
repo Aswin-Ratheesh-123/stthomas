@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #031a36;
+}
+
+@theme inline {
+  --color-navy-deep: #062b5c;
+  --color-navy-dark: #031a36;
+  --color-blue-royal: #0b5ed7;
+  --color-blue-bright: #1677ff;
+  --color-blue-light: #f4f8fc;
+  --color-gray-soft: #eef2f6;
+  
+  --font-sans: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-blue-light);
+  color: var(--color-navy-dark);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-gray-soft);
+}
+::-webkit-scrollbar-thumb {
+  background: #062b5c55;
+  border-radius: 5px;
+  border: 2px solid var(--color-gray-soft);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-navy-deep);
+}
+
+/* Custom Cursor Rules (Desktop Only) */
+@media (min-width: 1024px) {
+  .custom-cursor-active,
+  .custom-cursor-active * {
+    cursor: none !important;
+  }
+}
+
+/* Continuous Marquee Ticker */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Glow effects */
+.glow-subtle {
+  box-shadow: 0 0 40px -10px rgba(22, 119, 255, 0.15);
+}
+
+.glow-navy {
+  box-shadow: 0 0 50px -10px rgba(6, 43, 92, 0.3);
+}
+
+/* Mask Reveal animation helper */
+.mask-reveal {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: clip-path 1.2s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.mask-reveal-hidden {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+
+
+
+@font-face {
+  font-family: 'CollegeBlackletter';
+  src: url('/fonts/old-english.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-college {
+  font-family: 'CollegeBlackletter', serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
