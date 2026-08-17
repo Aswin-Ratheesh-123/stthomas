@@ -13,6 +13,7 @@ import DepartmentCard from '@/components/DepartmentCard';
 import EventCard from '@/components/EventCard';
 import NewsCard from '@/components/NewsCard';
 import AdmissionCTA from '@/components/AdmissionCTA';
+import AlumniSection from '@/components/AlumniSection';
 
 import { departments } from '@/data/departments';
 import { events } from '@/data/events';
@@ -727,6 +728,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Alumni Section */}
+      <AlumniSection />
 
       {/* 13. Admissions CTA Timeline */}
       <AdmissionCTA />
