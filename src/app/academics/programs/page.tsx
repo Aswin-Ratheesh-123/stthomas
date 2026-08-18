@@ -24,70 +24,7 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* UG Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            label="Undergraduate Courses"
-            title="Bachelor of Technology (B.Tech)"
-            subtitle="Our four-year B.Tech programs combine deep analytical theory, laboratory training, and design collaborations to prepare engineers for leadership."
-          />
-
-          <div className="space-y-8">
-            {programs.ug.map((p) => (
-              <div
-                key={p.id}
-                className="bg-blue-light/20 border border-gray-100 p-6 sm:p-8 rounded-2xl flex flex-col lg:flex-row gap-8 items-start justify-between"
-              >
-                <div className="space-y-4 max-w-3xl text-left">
-                  <div className="flex gap-4 text-xs font-bold uppercase tracking-wider text-blue-royal">
-                    <span className="bg-blue-royal/5 px-2.5 py-1 rounded">Duration: {p.duration}</span>
-                    <span className="bg-blue-royal/5 px-2.5 py-1 rounded">{p.degree}</span>
-                  </div>
-                  <h3 className="font-extrabold text-navy-deep text-xl sm:text-2xl uppercase tracking-tight">
-                    {p.name}
-                  </h3>
-                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                    {p.description}
-                  </p>
-                  
-                  {p.branches && (
-                    <div className="pt-2">
-                      <h4 className="font-bold text-xs uppercase text-navy-deep tracking-wider mb-2.5">
-                        Available B.Tech Engineering Branches:
-                      </h4>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-semibold text-gray-600">
-                        {p.branches.map((b, idx) => (
-                          <div key={idx} className="flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 bg-blue-bright rounded-full shrink-0" />
-                            <span>{b}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-
-                {/* Requirements Card */}
-                <div className="bg-white border border-gray-100 p-6 rounded-xl shadow-sm w-full lg:w-[320px] text-left shrink-0">
-                  <h4 className="font-extrabold text-xs uppercase text-navy-deep tracking-wider mb-3 flex items-center gap-1.5">
-                    <ShieldCheck size={14} className="text-blue-royal" /> Admission Eligibility:
-                  </h4>
-                  <p className="text-xs text-gray-500 font-medium leading-relaxed mb-6">
-                    {p.eligibility}
-                  </p>
-                  <Link
-                    href="/admissions"
-                    className="block text-center w-full bg-blue-royal hover:bg-blue-bright text-white font-bold text-xs uppercase py-3 rounded-lg tracking-wider transition-colors shadow-sm active:scale-95 cursor-pointer"
-                  >
-                    Apply Now B.Tech
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
     
 

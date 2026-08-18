@@ -148,7 +148,7 @@ export default function Navbar() {
                 overflow-hidden
 
                 /* Move logo right ONLY on desktop */
-                lg:ml-25
+                lg:ml-0
               "
             >
               <Image

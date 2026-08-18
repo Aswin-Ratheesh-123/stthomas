@@ -165,11 +165,11 @@ export default function AlumniSection() {
 
           <div className="relative z-10 flex flex-col lg:flex-row justify-between items-center gap-8 text-center lg:text-left">
             <div className="max-w-2xl">
-              <span className="text-xs font-black tracking-widest text-blue-bright uppercase mb-3 block">
+              <span className="text-xs font-black tracking-widest text-blue-bright  mb-3 block">
                 Stay Connected
               </span>
-              <h3 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight">
-                Are you a Proud Alumnus of STCET?
+              <h3 className="text-2xl sm:text-3xl font-extrabold  tracking-tight">
+                Are you a Proud Alumnus of  St.Thomas?
               </h3>
               <p className="text-sm text-gray-300 mt-3 leading-relaxed">
                 Join our official network registry to re-connect with batchmates, mentor current tech students, get invitations to campus events, and share your industry achievements.

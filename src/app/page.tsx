@@ -124,98 +124,173 @@ export default function Home() {
       <StatisticsSection />
 
       {/* 5. Explore Our Academics Showcase */}
-      <section className="py-24 bg-blue-light/30 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            label="Explore Our Academics"
-            title="A Curriculum Built For Technological Leadership"
-            subtitle="Explore our range of rigorous engineering degree programs, certificate schedules, and industry partnerships."
-            align="center"
-          />
+<section className="relative overflow-hidden bg-blue-light/30 py-20 sm:py-24">
+  <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* UG Card */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-blue-bright/10 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
-            >
-              <div>
-                <div className="w-12 h-12 bg-blue-royal/5 text-blue-royal rounded-xl flex items-center justify-center mb-6">
-                  <GraduationCap size={24} />
-                </div>
-                <h3 className="font-black text-navy-deep text-lg uppercase mb-3">Undergraduate (UG)</h3>
-                <p className="text-gray-500 text-xs sm:text-sm leading-relaxed mb-6">
-                  Four-year Bachelor of Technology (B.Tech) courses across key engineering sectors combining coding practices, physical diagnostics, and core theory.
-                </p>
-                <ul className="space-y-2 text-xs font-semibold text-gray-600 mb-8">
-                  <li className="flex items-center gap-2">• Computer Science & Engineering</li>
-                  <li className="flex items-center gap-2">• Electronics & Communication</li>
-                </ul>
-              </div>
-              <Link
-                href="/academics/programs"
-                className="text-xs font-bold text-blue-royal uppercase tracking-widest flex items-center gap-1.5 hover:text-blue-bright transition-colors"
-              >
-                UG Course Structure <ChevronRight size={15} />
-              </Link>
-            </motion.div>
+    <SectionHeading
+      label="Explore Our Academics"
+      title="A Curriculum Built For Technological Leadership"
+      subtitle="Explore our range of rigorous engineering degree programs, certificate schedules, and industry partnerships."
+      align="center"
+    />
 
-            {/* PG Card */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-blue-bright/10 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
-            >
-              <div>
-                <div className="w-12 h-12 bg-blue-royal/5 text-blue-royal rounded-xl flex items-center justify-center mb-6">
-                  <BookOpen size={24} />
-                </div>
-                <h3 className="font-black text-navy-deep text-lg uppercase mb-3">Postgraduate (PG)</h3>
-                <p className="text-gray-500 text-xs sm:text-sm leading-relaxed mb-6">
-                  Two-year Master of Technology (M.Tech) degrees for detailed specializations in VLSI engineering and advanced computing structures.
-                </p>
-                <ul className="space-y-2 text-xs font-semibold text-gray-600 mb-8">
-                  <li className="flex items-center gap-2">• M.Tech in Computer Science</li>
-                  <li className="flex items-center gap-2">• M.Tech in VLSI & Embedded Systems</li>
-                  <li className="flex items-center gap-2">• Guided Thesis Research Work</li>
-                </ul>
-              </div>
-              <Link
-                href="/academics/programs"
-                className="text-xs font-bold text-blue-royal uppercase tracking-widest flex items-center gap-1.5 hover:text-blue-bright transition-colors"
-              >
-                PG Course Structure <ChevronRight size={15} />
-              </Link>
-            </motion.div>
+    <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
 
-            {/* Professional Certifications Card */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-blue-bright/10 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
-            >
-              <div>
-                <div className="w-12 h-12 bg-blue-royal/5 text-blue-royal rounded-xl flex items-center justify-center mb-6">
-                  <Award size={24} />
-                </div>
-                <h3 className="font-black text-navy-deep text-lg uppercase mb-3">Certifications</h3>
-                <p className="text-gray-500 text-xs sm:text-sm leading-relaxed mb-6">
-                  Short-term specialist programs focusing on applied machine learning, neural networks, and industrial robotics automations.
-                </p>
-                <ul className="space-y-2 text-xs font-semibold text-gray-600 mb-8">
-                  <li className="flex items-center gap-2">• Applied Machine Learning Certificate</li>
-                  <li className="flex items-center gap-2">• Industrial Robotics & PLC Automation</li>
-                  <li className="flex items-center gap-2">• Continuous Industry Bootcamps</li>
-                </ul>
-              </div>
-              <Link
-                href="/academics/programs"
-                className="text-xs font-bold text-blue-royal uppercase tracking-widest flex items-center gap-1.5 hover:text-blue-bright transition-colors"
-              >
-                Certification Details <ChevronRight size={15} />
-              </Link>
-            </motion.div>
+      {/* Undergraduate */}
+      <motion.div
+        whileHover={{ y: -6 }}
+        transition={{ duration: 0.2 }}
+        className="
+          group
+          flex h-full flex-col justify-between
+          rounded-2xl
+          border border-gray-200
+          bg-white
+          p-7 sm:p-8
+          shadow-sm
+          transition-shadow duration-300
+          hover:border-blue-royal/20
+          hover:shadow-xl
+        "
+      >
+        <div>
+          <div
+            className="
+              mb-6 flex h-12 w-12
+              items-center justify-center
+              rounded-xl
+              bg-blue-royal/5
+              text-blue-royal
+              transition-colors duration-300
+              group-hover:bg-blue-royal
+              group-hover:text-white
+            "
+          >
+            <GraduationCap size={23} strokeWidth={2} />
           </div>
+
+          <h3 className="mb-3 text-lg font-black uppercase tracking-tight text-navy-deep">
+            Undergraduate (UG)
+          </h3>
+
+          <p className="mb-6 text-sm leading-6 text-gray-500">
+            Four-year Bachelor of Technology (B.Tech) courses across key
+            engineering sectors combining coding practices, physical
+            diagnostics, and core theory.
+          </p>
+
+          <ul className="space-y-3 text-sm font-semibold text-gray-600">
+            <li className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-royal" />
+              <span>Computer Science & Engineering</span>
+            </li>
+
+            <li className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-royal" />
+              <span>Electronics & Communication</span>
+            </li>
+          </ul>
         </div>
-      </section>
+
+        <Link
+          href="/academics/programs"
+          className="
+            mt-8 inline-flex w-fit
+            items-center gap-2
+            text-xs font-bold uppercase
+            tracking-[0.12em]
+            text-blue-royal
+            transition-all duration-200
+            hover:gap-3
+            hover:text-blue-bright
+          "
+        >
+          UG Course Structure
+          <ChevronRight size={15} />
+        </Link>
+      </motion.div>
+
+      {/* Professional Certifications */}
+      <motion.div
+        whileHover={{ y: -6 }}
+        transition={{ duration: 0.2 }}
+        className="
+          group
+          flex h-full flex-col justify-between
+          rounded-2xl
+          border border-gray-200
+          bg-white
+          p-7 sm:p-8
+          shadow-sm
+          transition-shadow duration-300
+          hover:border-blue-royal/20
+          hover:shadow-xl
+        "
+      >
+        <div>
+          <div
+            className="
+              mb-6 flex h-12 w-12
+              items-center justify-center
+              rounded-xl
+              bg-blue-royal/5
+              text-blue-royal
+              transition-colors duration-300
+              group-hover:bg-blue-royal
+              group-hover:text-white
+            "
+          >
+            <Award size={23} strokeWidth={2} />
+          </div>
+
+          <h3 className="mb-3 text-lg font-black uppercase tracking-tight text-navy-deep">
+            Certifications
+          </h3>
+
+          <p className="mb-6 text-sm leading-6 text-gray-500">
+            Short-term specialist programs focusing on applied machine
+            learning, neural networks, and industrial robotics automations.
+          </p>
+
+          <ul className="space-y-3 text-sm font-semibold text-gray-600">
+            <li className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-royal" />
+              <span>Applied Machine Learning Certificate</span>
+            </li>
+
+            <li className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-royal" />
+              <span>Industrial Robotics & PLC Automation</span>
+            </li>
+
+            <li className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-royal" />
+              <span>Continuous Industry Bootcamps</span>
+            </li>
+          </ul>
+        </div>
+
+        <Link
+          href="/academics/programs"
+          className="
+            mt-8 inline-flex w-fit
+            items-center gap-2
+            text-xs font-bold uppercase
+            tracking-[0.12em]
+            text-blue-royal
+            transition-all duration-200
+            hover:gap-3
+            hover:text-blue-bright
+          "
+        >
+          Certification Details
+          <ChevronRight size={15} />
+        </Link>
+      </motion.div>
+
+    </div>
+  </div>
+</section>
 
       {/* 6. Featured Department Split-Screen */}
       <section className="py-24 bg-white relative">
