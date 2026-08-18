@@ -20,6 +20,7 @@ import { events } from '@/data/events';
 import { news } from '@/data/news';
 import { recruiters } from '@/data/placements';
 import { galleryItems } from '@/data/gallery';
+import RecruiterLogo from '@/components/RecruiterLogo';
 
 export default function Home() {
   return (
@@ -416,13 +417,13 @@ export default function Home() {
               <div className="w-full flex items-center relative overflow-hidden select-none">
                 <div className="animate-marquee whitespace-nowrap py-1 text-sm font-black tracking-widest text-navy-deep flex items-center gap-14">
                   {recruiters.map((rec, idx) => (
-                    <span key={idx} className="bg-white border border-gray-100 px-5 py-3 rounded-lg shadow-sm">
-                      {rec.name}
+                    <span key={idx} className="bg-white border border-gray-100 px-6 py-2 rounded-xl shadow-sm flex items-center justify-center min-w-[150px] h-14">
+                      <RecruiterLogo name={rec.name} className="h-7 w-auto" />
                     </span>
                   ))}
                   {recruiters.map((rec, idx) => (
-                    <span key={`dup-${idx}`} className="bg-white border border-gray-100 px-5 py-3 rounded-lg shadow-sm">
-                      {rec.name}
+                    <span key={`dup-${idx}`} className="bg-white border border-gray-100 px-6 py-2 rounded-xl shadow-sm flex items-center justify-center min-w-[150px] h-14">
+                      <RecruiterLogo name={rec.name} className="h-7 w-auto" />
                     </span>
                   ))}
                 </div>
@@ -432,13 +433,13 @@ export default function Home() {
               <div className="w-full flex items-center relative overflow-hidden select-none">
                 <div className="animate-marquee whitespace-nowrap py-1 text-sm font-black tracking-widest text-navy-deep flex items-center gap-14 [animation-direction:reverse]">
                   {recruiters.slice(5).concat(recruiters.slice(0, 5)).map((rec, idx) => (
-                    <span key={`alt-${idx}`} className="bg-white border border-gray-100 px-5 py-3 rounded-lg shadow-sm">
-                      {rec.name}
+                    <span key={`alt-${idx}`} className="bg-white border border-gray-100 px-6 py-2 rounded-xl shadow-sm flex items-center justify-center min-w-[150px] h-14">
+                      <RecruiterLogo name={rec.name} className="h-7 w-auto" />
                     </span>
                   ))}
                   {recruiters.slice(5).concat(recruiters.slice(0, 5)).map((rec, idx) => (
-                    <span key={`altdup-${idx}`} className="bg-white border border-gray-100 px-5 py-3 rounded-lg shadow-sm">
-                      {rec.name}
+                    <span key={`altdup-${idx}`} className="bg-white border border-gray-100 px-6 py-2 rounded-xl shadow-sm flex items-center justify-center min-w-[150px] h-14">
+                      <RecruiterLogo name={rec.name} className="h-7 w-auto" />
                     </span>
                   ))}
                 </div>

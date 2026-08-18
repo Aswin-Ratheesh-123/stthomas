@@ -4,6 +4,7 @@ import SectionHeading from '@/components/SectionHeading';
 import { Award, Briefcase, GraduationCap, ChevronRight, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
 import { recruiters, placementHistory, trainingModules } from '@/data/placements';
+import RecruiterLogo from '@/components/RecruiterLogo';
 
 export default function PlacementsPage() {
   return (
@@ -133,12 +134,12 @@ export default function PlacementsPage() {
             {recruiters.map((rec, idx) => (
               <div
                 key={idx}
-                className="p-6 bg-gray-50 border border-gray-100 rounded-xl hover:border-blue-bright/10 hover:shadow-md transition-all duration-300 flex flex-col justify-center items-center text-center group"
+                className="p-6 bg-gray-50 border border-gray-100 rounded-xl hover:border-blue-bright/10 hover:shadow-md transition-all duration-300 flex flex-col justify-center items-center text-center group h-32"
               >
-                <span className="font-black text-navy-deep text-lg tracking-widest group-hover:text-blue-royal transition-colors">
-                  {rec.name}
-                </span>
-                <span className="text-[9px] font-bold text-gray-400 uppercase tracking-widest mt-1">
+                <div className="flex-1 flex items-center justify-center w-full">
+                  <RecruiterLogo name={rec.name} className="h-7 w-auto transition-transform group-hover:scale-105 duration-300" />
+                </div>
+                <span className="text-[9px] font-extrabold text-gray-400 uppercase tracking-widest mt-3 block">
                   {rec.industry}
                 </span>
               </div>
