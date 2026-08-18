@@ -300,7 +300,7 @@ export default function Home() {
             <div className="lg:col-span-6 relative h-[350px] sm:h-[450px] rounded-2xl overflow-hidden shadow-2xl border border-gray-100 bg-navy-dark group">
               <Image
                 src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=800&q=80"
-                alt="Computer Science Laboratories"
+                alt="Computer Science & Engineering ( Data Science ) Laboratories"
                 fill
                 sizes="(max-w-768px) 100vw, 55vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-103"
@@ -308,8 +308,8 @@ export default function Home() {
               {/* Blur mask details on hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 to-transparent flex flex-col justify-end p-8 text-white">
                 <span className="text-[10px] font-black uppercase tracking-widest text-blue-bright mb-1">Highlight Branch</span>
-                <h4 className="font-extrabold text-xl sm:text-2xl uppercase tracking-tight">CSE Laboratory Facility</h4>
-                <p className="text-xs text-gray-300 mt-2 leading-relaxed">Configured with NVIDIA GPU workstations, GPU compilers, and server racks for research.</p>
+                <h4 className="font-extrabold text-xl sm:text-2xl uppercase tracking-tight">CSE-DS Laboratory Facility</h4>
+                <p className="text-xs text-gray-300 mt-2 leading-relaxed">Configured with high-performance GPU workstations and distributed big data environments for analytics.</p>
               </div>
             </div>
 
@@ -317,34 +317,34 @@ export default function Home() {
             <div className="lg:col-span-6 space-y-6">
               <span className="text-xs font-black tracking-widest  text-blue-royal block">Featured Department</span>
               <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-navy-deep leading-tight font-sans">
-                Computer Science & Engineering
+                Computer Science & Engineering ( Data Science )
               </h2>
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                The Department of CSE at STCET is committed to nurturing computing skills. Supported by highly qualified faculty, our branch maintains state-of-the-art coding hubs.
+                The CSE (Data Science) branch at STCET is committed to nurturing analytical and intelligent software engineering skills. Supported by highly qualified faculty, our branch maintains state-of-the-art data intelligence labs.
               </p>
               <div className="grid grid-cols-2 gap-4 pb-6">
                 <div className="flex items-start gap-2.5 text-xs text-gray-500 font-semibold">
                   <CheckCircle2 size={16} className="text-blue-bright shrink-0" />
-                  <span>NVIDIA GPU Computing Labs</span>
+                  <span>Big Data & Analytics Labs</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-gray-500 font-semibold">
                   <CheckCircle2 size={16} className="text-blue-bright shrink-0" />
-                  <span>100% Core IT Placement Track</span>
+                  <span>100% Data Analytics & IT Placements</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-gray-500 font-semibold">
                   <CheckCircle2 size={16} className="text-blue-bright shrink-0" />
-                  <span>Industry-Partnered Projects</span>
+                  <span>AI & Analytics Industry MoUs</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-gray-500 font-semibold">
                   <CheckCircle2 size={16} className="text-blue-bright shrink-0" />
-                  <span>Active Hackathon Clubs</span>
+                  <span>Active Analytics Hackathons</span>
                 </div>
               </div>
               <Link
-                href="/academics/departments/computer-science-engineering"
+                href="/academics/departments/computer-science-engineering-data-science"
                 className="inline-flex items-center gap-2 bg-navy-deep hover:bg-blue-royal text-white font-bold text-xs uppercase tracking-widest px-7 py-4 rounded-xl shadow-md transition-colors cursor-pointer"
               >
-                Explore CSE Branch <ArrowRight size={14} />
+                Explore CSE-DS Branch <ArrowRight size={14} />
               </Link>
             </div>
           </div>
