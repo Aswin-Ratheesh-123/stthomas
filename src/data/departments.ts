@@ -39,6 +39,30 @@ export const departments: Department[] = [
       { name: 'Machine Learning Lab', description: 'Equipped with NVIDIA GPU workstations for deep learning and neural network training.' }
     ]
   },
+  {
+    slug: 'computer-science-engineering-data-science',
+    name: 'Computer Science & Engineering ( Data Science )',
+    shortName: 'CSE-DS',
+    icon: 'BrainCircuit',
+    description: 'Specializing in analytics, machine learning algorithms, statistical techniques, and big data architectures to extract actionable insights from complex systems.',
+    vision: 'To lead the data-driven future through advanced research, interdisciplinary intelligence education, and innovative problem solving.',
+    mission: [
+      'Deliver rich foundations in statistics, mathematical modelling, and machine learning.',
+      'Foster hands-on expertise in big data frameworks, pipeline orchestration, and AI deployment.',
+      'Promote research and consultancy in predictive analytics and intelligent computing systems.'
+    ],
+    intake: 60,
+    duration: '4 Years (B.Tech)',
+    achievements: [
+      'Inaugural batch students developed an AI-based campus analytics system.',
+      'MoU signed with global data analytics firm for student internships and industrial projects.',
+      'Won national data science hackathons for predictive modeling designs.'
+    ],
+    labs: [
+      { name: 'Data Engineering & Big Data Lab', description: 'Equipped with distributed clusters running Apache Spark, Hadoop, and NoSQL environments.' },
+      { name: 'AI & Neural Networks Lab', description: 'Equipped with high-end NVIDIA Tensor Core GPU workstations for deep learning models.' }
+    ]
+  },
   
   {
     slug: 'electronics-communication-engineering',

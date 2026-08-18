@@ -356,7 +356,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             label="Departments"
-            title="Six Pillars of Modern Engineering"
+            title="Five Pillars of Modern Engineering"
             subtitle="Discover our academic branches, equipped with specialized labs, dedicated classrooms, and experienced academic mentors."
             align="center"
           />

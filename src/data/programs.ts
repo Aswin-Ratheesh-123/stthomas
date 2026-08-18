@@ -44,6 +44,7 @@ export const programs: {
         'Our B.Tech degree programs offer rigorous coursework, hands-on engineering lab experiences, and project-based learning to shape technical leaders of tomorrow.',
       branches: [
         'Computer Science & Engineering',
+        'Computer Science & Engineering ( Data Science )',
         'Electronics & Communication Engineering',
         'Mechanical Engineering',
         'Civil Engineering'

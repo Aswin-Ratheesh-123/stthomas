@@ -28,6 +28,7 @@ export default function AdmissionsPage() {
 
   const seatsData = [
     { branch: 'Computer Science & Engineering', code: 'CSE', seats: 120 },
+    { branch: 'Computer Science & Engineering ( Data Science )', code: 'CSE-DS', seats: 60 },
     { branch: 'Electronics & Communication Engineering', code: 'ECE', seats: 60 },
     { branch: 'Mechanical Engineering', code: 'ME', seats: 60 },
     { branch: 'Civil Engineering', code: 'CE', seats: 60 }
